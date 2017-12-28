@@ -1,0 +1,14 @@
+{
+  "name": "drorweb_codefresh_pi",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "Dror Avinun dror@drorweb.com",
+  "main": "piService.js",
+  "scripts": {
+    "start": "node piService.js"
+  },
+  "dependencies": {},
+  "engines": {
+    "node": "8.9.3"
+  }
+}
