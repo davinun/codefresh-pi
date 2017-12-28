@@ -15,9 +15,17 @@ const server = http.createServer((req, res) => {
     }
 });
 
+server.listen(port, () => {
+    let baseUrl = `http://localhost:${port}/`;
+    console.log(`Server running at http://localhost:${port}/`);
+    console.log(`usage: ${baseUrl}{n}`);
+    console.log(`example: ${baseUrl}0`);
+});
+/*
 server.listen(port, hostname, () => {
     let baseUrl = `http://${hostname}:${port}/`;
     console.log(`Server running at http://${hostname}:${port}/`);
-    console.log(`usage: ${baseUrl}{n}`)
-    console.log(`example: ${baseUrl}0`)
+    console.log(`usage: ${baseUrl}{n}`);
+    console.log(`example: ${baseUrl}0`);
 });
+*/

@@ -5,10 +5,22 @@
   "author": "Dror Avinun dror@drorweb.com",
   "main": "piService.js",
   "scripts": {
-    "start": "node piService.js"
+    "start": "node ./src/piService.js"
   },
   "dependencies": {},
   "engines": {
     "node": "8.9.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davinun/codefresh-pi.git"
+  },
+  "keywords": [
+    "drorweb"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davinun/codefresh-pi/issues"
+  },
+  "homepage": "https://github.com/davinun/codefresh-pi#readme"
 }
