@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "Node.js on Docker",
   "author": "Dror Avinun dror@drorweb.com",
-  "main": "piService.js",
+  "main": "piServiceX.js",
   "scripts": {
-    "start": "node ./src/piService.js"
+    "start": "node ./src/piServiceX.js"
   },
   "dependencies": {
     "express": "^4.16.2",
