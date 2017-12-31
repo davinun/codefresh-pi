@@ -21,11 +21,3 @@ server.listen(port, () => {
     console.log(`usage: ${baseUrl}{n}`);
     console.log(`example: ${baseUrl}0`);
 });
-/*
-server.listen(port, hostname, () => {
-    let baseUrl = `http://${hostname}:${port}/`;
-    console.log(`Server running at http://${hostname}:${port}/`);
-    console.log(`usage: ${baseUrl}{n}`);
-    console.log(`example: ${baseUrl}0`);
-});
-*/
