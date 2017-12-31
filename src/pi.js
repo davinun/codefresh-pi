@@ -4,17 +4,17 @@
  */
 module.exports = {
     calcN: function (n) {
-        var partial = function (d, c) {
-            var sum = 0;
+        const partial = function (d, c) {
+            let sum = 0;
 
             // Left sum
-            var k;
+            let k;
             for (k = 0; k <= d - 1; k++) {
                 sum += (Math.pow(16, d - 1 - k) % (8 * k + c)) / (8 * k + c);
             }
 
             // Right sum. This converges fast...
-            var prev = undefined;
+            let prev = undefined;
             for (k = d; sum !== prev; k++) {
                 prev = sum;
                 sum += Math.pow(16, d - 1 - k) / (8 * k + c);
@@ -28,11 +28,11 @@ module.exports = {
          result for negative numbers. E.g. `-2.9 % 1`
          returns -0.9, the correct result is 0.1.
          */
-        var mod1 = function (x) {
+        let mod1 = function (x) {
             return x < 0 ? 1 - (-x % 1) : x % 1;
         };
 
-        var s = 0;
+        let s = 0;
         s += 4 * partial(n, 1);
         s += -2 * partial(n, 4);
         s += -1 * partial(n, 5);
