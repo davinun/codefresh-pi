@@ -28,7 +28,7 @@ docker exec -it <docker-id> /bin/bash
 docker logs <docker-id>
 
 #test the service
-wget http://127.0.0.1:3000/1
+wget http://127.0.0.1:3000/?n=[1,2,3,79]
 
 #check listening ports
 sudo lsof -i -P -n | grep LISTEN
