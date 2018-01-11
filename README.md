@@ -16,7 +16,7 @@ wrap this with Docker and deploy to Kubernetes using codefresh.
 PI in hexa is: 3.243F6A8885 A308D31319 8A2E037073 44A4093822 299F31D00 (http://www.super-computing.org/pi-hexa_current.html)
 
 Check it out:
-http://<host>/?n=[1,2,4,79]
+http://host:port/?n=[1,2,4,79]
 
 Expected response:
 [[1,2],[2,4],[4,15],[79,7]]
