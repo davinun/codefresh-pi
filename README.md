@@ -11,6 +11,11 @@ the number of parallelization can be controlled so if exectued in k8s you can do
 wrap this with Docker and deploy to Kubernetes using codefresh.
 
 
+#test the service
+wget http://127.0.0.1:3000/?n=[1,2,3,79]
+
+  Expected response:
+  [[1,2],[3,3],[2,4],[79,7]]
 
 #project home dir
 cd /home/dror/WebstormProjects/codefresh-pi
@@ -26,9 +31,6 @@ docker exec -it <docker-id> /bin/bash
 
 #view the console / logs
 docker logs <docker-id>
-
-#test the service
-wget http://127.0.0.1:3000/?n=[1,2,3,79]
 
 #check listening ports
 sudo lsof -i -P -n | grep LISTEN
