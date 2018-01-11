@@ -12,10 +12,21 @@ wrap this with Docker and deploy to Kubernetes using codefresh.
 
 
 #test the service
-wget http://127.0.0.1:3000/?n=[1,2,3,79]
+#------------------
+PI in hexa is: 3.243F6A8885 A308D31319 8A2E037073 44A4093822 299F31D00 (http://www.super-computing.org/pi-hexa_current.html)
 
-  Expected response:
-  [[1,2],[3,3],[2,4],[79,7]]
+Check it out:
+http://<host>/?n=[1,2,4,79]
+
+Expected response:
+[[1,2],[2,4],[4,15],[79,7]]
+
+Explanation:
+1st digit is 2
+2nd digit is 4
+4th digit is 15 (F)
+79th digit is 7
+
 
 #project home dir
 cd /home/dror/WebstormProjects/codefresh-pi
